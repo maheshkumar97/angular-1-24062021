@@ -1,0 +1,22 @@
+<app-server>lOading....</app-server>
+<app-server>lOading....</app-server>
+
+<div class="border border-primary">
+
+  <label>Server Name</label>
+  <!-- <input type="text"
+class="form-control"
+(input)="onUpdateServerName($event)" placeholder="One way binding">
+  Event binding example -->
+
+  <!-- <p>{{ serverName }}</p> -->
+  <input class="form-control"type="text" [(ngModel)]="serverName" placeholder="NG Model directive Example">
+  <!-- Two way binding-->
+
+</div>
+
+<button class="btn btn-secondary" [disabled]="!allowUsertoClick"
+(click)="onServerCreate()">{{ buttonDesc }}</button> <!-- Property binding example-->
+<br>
+<i *ngIf="server"> {{ createServer }}</i> <!-- String interpolation here -->
+<!-- property binding example -->

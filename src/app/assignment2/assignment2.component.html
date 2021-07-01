@@ -1,0 +1,5 @@
+<h3>Assignment 2</h3>
+<input type="text" class="form-control" [(ngModel)]="userName" (input)="onUpdateServerName($event)">
+<p>{{ userName }}</p>
+<button class="btn btn-primary" [disabled]="!userNameValue"
+(click)="onClickClearUserName()">Click to Clear</button>
